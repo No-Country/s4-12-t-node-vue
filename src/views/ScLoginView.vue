@@ -1,7 +1,7 @@
 <script setup>
-import ScInputIcon from '../components/Input/ScInputIcon.vue';
-import ScMailIcon from '../components/icons/ScMailIcon.vue';
-import ScInput from '../components/Input/ScInput.vue';
+import ScInputIcon from "../components/Input/ScInputIcon.vue";
+import ScMailIcon from "../components/icons/ScMailIcon.vue";
+import ScInput from "../components/Input/ScInput.vue";
 </script>
 <template>
   <form>
@@ -11,7 +11,7 @@ import ScInput from '../components/Input/ScInput.vue';
       <ScMailIcon width="15" height="15" />
     </ScInputIcon>
     <ScInputIcon>
-      <ScInput type="password"/>
+      <ScInput type="password" />
       <ScMailIcon width="15" height="15" />
     </ScInputIcon>
   </form>

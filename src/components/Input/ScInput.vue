@@ -20,5 +20,10 @@ defineProps({
 });
 </script>
 <template>
-  <input class="border-neutral-400 p-4"  :type="type" :required="required" :placeholder="placeholder" />
+  <input
+    class="border-neutral-400 p-4"
+    :type="type"
+    :required="required"
+    :placeholder="placeholder"
+  />
 </template>

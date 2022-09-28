@@ -1,14 +1,14 @@
 <script setup>
 defineProps({
-  width:{
+  width: {
     type: String,
     required: false,
   },
   height: {
     type: String,
     required: false,
-  }
-})
+  },
+});
 </script>
 <template>
   <svg

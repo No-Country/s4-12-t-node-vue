@@ -1,9 +1,9 @@
 <script setup>
-import ScInput from './ScInput.vue';
+import ScInput from "./ScInput.vue";
 </script>
 <template>
   <div class="relative">
-    <ScInput type=""/>
+    <ScInput type="" />
     <slot class="absolute"></slot>
   </div>
 </template>

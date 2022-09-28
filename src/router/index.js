@@ -12,12 +12,12 @@ const router = createRouter({
     {
       path: "/login",
       name: "login",
-      component: () => import("../views/ScLoginView")
+      component: () => import("../views/ScLoginView"),
     },
     {
       path: "/login",
       name: "login",
-      component: () => import("../views/ScRegisterView")
+      component: () => import("../views/ScRegisterView"),
     },
   ],
 });
