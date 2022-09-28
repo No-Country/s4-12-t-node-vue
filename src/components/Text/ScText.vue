@@ -1,6 +1,4 @@
 <template>
   <!-- <component is="a" /> -->
-  <p>
-    text example
-  </p>
+  <p>text example</p>
 </template>
