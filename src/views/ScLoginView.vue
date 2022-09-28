@@ -17,7 +17,7 @@ import ScLockIcon from "../components/icons/ScLockIcon.vue";
     </ScInputIcon>
     <ScInputIcon>
       <template #input>
-        <ScInput type="password"/>
+        <ScInput type="password" />
       </template>
       <template #icon>
         <ScLockIcon width="15" height="15" />
