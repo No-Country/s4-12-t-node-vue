@@ -7,10 +7,10 @@ import ScLockIcon from "../components/icons/ScLockIcon.vue";
 import ScButton from "../components/Button/ScButton.vue";
 import ScText from "../components/Text/ScText.vue";
 
-const messageValidation = ref("");
+// const messageValidation = ref("");
 const email = ref("");
-const password = ref("");
-const handleVaditation = (e) => {};
+// const password = ref("");
+// const handleVaditation = (e) => {};
 watch(email, (newEmail) => {
   console.log(newEmail);
 });
