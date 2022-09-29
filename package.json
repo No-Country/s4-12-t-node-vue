@@ -8,10 +8,12 @@
     "preview": "vite preview --port 4173",
     "format": "prettier --write .",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "vue": "^3.2.38",
     "vue-router": "^4.1.5",
     "vuex": "^4.0.2"
