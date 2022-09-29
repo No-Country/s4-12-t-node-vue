@@ -11,5 +11,4 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  base: "/s4-12-t-node-vue/",
 });
