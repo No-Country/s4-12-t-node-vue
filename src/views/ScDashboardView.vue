@@ -1,7 +1,6 @@
 <template>
   <div>
-
-    <h1 class="text-center font-mono mt-5 ">Datos del condominio</h1>
+    <h1 class="text-center font-mono mt-5">Datos del condominio</h1>
     <form class="m-10 border-2 p-6 drop-shadow-md">
       <div class="mb-6">
         <label
