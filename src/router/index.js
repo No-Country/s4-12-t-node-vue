@@ -23,7 +23,7 @@ const router = createRouter({
       path: "/dashboard",
       name: "dashboard",
       component: () => import("../views/ScDashboardView.vue"),
-    }
+    },
   ],
 });
 
