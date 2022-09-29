@@ -11,9 +11,9 @@ const messageValidation = ref("");
 const email = ref("");
 const password = ref("");
 const handleVaditation = (e) => {};
-watch(email,(newEmail) => {
+watch(email, (newEmail) => {
   console.log(newEmail);
-})
+});
 </script>
 <template>
   <form class="border border-gray-700 w-4/12 px-4 py-5 rounded-md m-auto">

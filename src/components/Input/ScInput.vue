@@ -11,7 +11,5 @@
 // });
 </script>
 <template>
-  <input
-    class="border border-gray-600 p-1 w-full"
-  />
+  <input class="border border-gray-600 p-1 w-full" />
 </template>
