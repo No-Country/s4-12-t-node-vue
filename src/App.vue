@@ -8,8 +8,8 @@
 import NavBarVue from "../src/components/NavBarVue.vue";
 export default {
   components: {
-    NavBarVue
-  }
+    NavBarVue,
+  },
 };
 </script>
 

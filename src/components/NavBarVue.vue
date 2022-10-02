@@ -17,8 +17,6 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
 
-
-
 .nav {
   font-family: "Titillium Web";
   text-transform: uppercase;
