@@ -1,13 +1,11 @@
 <template>
- 
-    <ul class="nav">
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/login">Inicio sesion</router-link></li>
-      <li><router-link to="/register">Registrar</router-link></li>
-      <li><router-link to="#">Contacto</router-link></li>
-      <li><router-link to="#">Nosotros</router-link></li>
-    </ul>
- 
+  <ul class="nav">
+    <li><router-link to="/">Home</router-link></li>
+    <li><router-link to="/login">Inicio sesion</router-link></li>
+    <li><router-link to="/register">Registrar</router-link></li>
+    <li><router-link to="#">Contacto</router-link></li>
+    <li><router-link to="#">Nosotros</router-link></li>
+  </ul>
 </template>
 
 <script>
@@ -18,7 +16,6 @@ export default {
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
-
 
 .nav {
   font-family: "Titillium Web";

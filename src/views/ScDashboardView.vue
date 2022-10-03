@@ -55,7 +55,7 @@
       </div>
       <div class="text-center">
         <button
-          class=" rounded-full bg-gray-800 text-white p-3 mt-10 object-right"
+          class="rounded-full bg-gray-800 text-white p-3 mt-10 object-right"
         >
           Registrar
         </button>
