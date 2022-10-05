@@ -19,7 +19,7 @@ const handleSubmit = () => {
 </script>
 <template>
   <form
-    class="border border-gray-700 w-2/4 px-4 py-5 rounded-md m-auto my-20"
+    class="border border-gray-700 w-11/12 sm:w-2/4 px-4 py-5 rounded-md m-auto my-20"
     @submit.prevent="handleSubmit"
   >
     <ScText tag="h1" class="text-center mb-5 text-2xl font-bold"
