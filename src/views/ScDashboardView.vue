@@ -1,7 +1,7 @@
 <template>
   <div><h1 class="text-center font-mono mt-5">Datos del condominio</h1></div>
-  <div class=" px-60 dashboard ">
-    <form class=" m-10 border-2 p-8 drop-shadow-md">
+  <div class="px-60 dashboard">
+    <form class="m-10 border-2 p-8 drop-shadow-md">
       <div class="mb-6">
         <label
           for="base-input"
@@ -69,6 +69,5 @@
 <style scoped>
 .dashboard {
   background-color: #f7f7f7;
- 
 }
 </style>
