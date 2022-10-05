@@ -72,7 +72,10 @@ const handleRedirect = () => {
     <ScButton type="submit">Iniciar sesion</ScButton>
     <div class="mt-4 m-auto">
       <ScText class="text-sm">¿Aún no tiene cuenta? </ScText
-      ><ScButtonLink type="button" class="text-sky-700 text-sm" @click="handleRedirect"
+      ><ScButtonLink
+        type="button"
+        class="text-sky-700 text-sm"
+        @click="handleRedirect"
         >Crear una cuenta</ScButtonLink
       >
     </div>
