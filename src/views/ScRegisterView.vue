@@ -30,7 +30,7 @@ const handleSubmit = () => {
     <!-- <ScText>Debe ingresar su nombre</ScText> -->
     <ScLabel class="input-required">Apellidos</ScLabel>
     <ScInput class="mb-5" placeholder="Ingresa tus apellidos" />
-    <ScLabel >Edad</ScLabel>
+    <ScLabel>Edad</ScLabel>
     <ScInput class="mb-5" placeholder="Ingresa tu edad" />
     <ScLabel class="input-required">Correo</ScLabel>
     <ScInput class="mb-5" type="text" placeholder="Ingresa tu correo" />
