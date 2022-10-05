@@ -3,14 +3,14 @@ import ScInput from "../components/Input/ScInput.vue";
 import ScText from "../components/Text/ScText.vue";
 import ScLabel from "../components/Label/ScLabel.vue";
 import ScButton from "../components/Button/ScButton.vue";
-import { useRoute, useRouter } from "vue-router";
-import { ref } from "vue";
+import { useRouter } from "vue-router";
+// import { ref } from "vue";
 
-const names = ref("");
-const lastname = ref("");
-const age = ref("");
-const file = ref({});
-const route = useRoute();
+// const names = ref("");
+// const lastname = ref("");
+// const age = ref("");
+// const file = ref({});
+// const route = useRoute();
 const router = useRouter();
 
 const handleSubmit = () => {
