@@ -1,14 +1,29 @@
 <template>
   <div id="app">
-    <NavBarVue></NavBarVue>
+    <NavBarVue
+      v-if="
+        $route.name === 'login' ||
+        $route.name === 'register' ||
+        $route.name === 'home'
+      "
+    ></NavBarVue>
     <RouterView />
+    <FooterLanding
+      v-if="
+        $route.name === 'login' ||
+        $route.name === 'register' ||
+        $route.name === 'home'
+      "
+    />
   </div>
 </template>
 <script>
-import NavBarVue from "../src/components/NavBarVue.vue";
+import NavBarVue from "../src/components/shared/ScNavbar.vue";
+import FooterLanding from "../src/components/shared/ScFooterLanding.vue";
 export default {
   components: {
     NavBarVue,
+    FooterLanding,
   },
 };
 </script>

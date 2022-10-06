@@ -30,12 +30,12 @@ const router = createRouter({
           name: "index",
           component: CondominiumDashboard,
         },
-        {
-          path: "condominium",
-          name: "condominium",
-          component: () =>
-            import("../views/Dashboard/ScCondominiumDashboardView.vue"),
-        },
+        // {
+        //   path: "condominium",
+        //   name: "condominium",
+        //   component: () =>
+        //     import("../views/Dashboard/ScCondominiumDashboardView.vue"),
+        // },
       ],
     },
   ],
