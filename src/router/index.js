@@ -24,18 +24,19 @@ const router = createRouter({
       path: "/dashboard",
       name: "Dashboard",
       component: () => import("../views/Dashboard/ScDashboardView.vue"),
-      children:[
+      children: [
         {
-          path:'',
-          name: 'index',
+          path: "",
+          name: "index",
           component: CondominiumDashboard,
         },
         {
-          path:'condominium',
-          name: 'condominium',
-          component: () => import("../views/Dashboard/ScCondominiumDashboardView.vue"),
-        }
-      ]
+          path: "condominium",
+          name: "condominium",
+          component: () =>
+            import("../views/Dashboard/ScCondominiumDashboardView.vue"),
+        },
+      ],
     },
   ],
 });
