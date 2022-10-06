@@ -1,8 +1,20 @@
 <template>
   <div id="app">
-    <NavBarVue v-if="$route.name === 'login' || $route.name === 'register' || $route.name === 'home'"></NavBarVue>
+    <NavBarVue
+      v-if="
+        $route.name === 'login' ||
+        $route.name === 'register' ||
+        $route.name === 'home'
+      "
+    ></NavBarVue>
     <RouterView />
-    <FooterLanding v-if="$route.name === 'login' || $route.name === 'register' || $route.name === 'home'"/>
+    <FooterLanding
+      v-if="
+        $route.name === 'login' ||
+        $route.name === 'register' ||
+        $route.name === 'home'
+      "
+    />
   </div>
 </template>
 <script>

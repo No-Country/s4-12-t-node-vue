@@ -2,16 +2,33 @@
   <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
     <div class="flex items-center flex-no-shrinkmr-6">
       <router-link to="/">
-        <img class="fill-current h-24 w-24 mr-2"  src="../assets/logo.png" alt="logo icon svg" />
+        <img
+          class="fill-current h-24 w-24 mr-2"
+          src="../assets/logo.png"
+          alt="logo icon svg"
+        />
       </router-link>
     </div>
     <div class="block sm:hidden">
-      <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-paleta-sac hover:border-paleta-sac">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      <button
+        @click="toggle"
+        class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-paleta-sac hover:border-paleta-sac"
+      >
+        <svg
+          class="fill-current h-3 w-3"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+        </svg>
       </button>
     </div>
-    <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
-      <ul class="nav text-sm sm:flex-grow sm: text-right">  
+    <div
+      :class="open ? 'block' : 'hidden'"
+      class="w-full flex-grow sm:flex sm:items-center sm:w-auto"
+    >
+      <ul class="nav text-sm sm:flex-grow sm: text-right">
         <li><router-link to="#about-us">Nosotros</router-link></li>
         <li><router-link to="/login">Inicio de Sesión</router-link></li>
         <li><router-link to="/register">Registrar</router-link></li>
@@ -27,14 +44,14 @@ export default {
   data() {
     return {
       open: false,
-    }
+    };
   },
   methods: {
-  	toggle() {
-    	this.open = !this.open
-    }
-  }
-}
+    toggle() {
+      this.open = !this.open;
+    },
+  },
+};
 </script>
 
 <style scoped>

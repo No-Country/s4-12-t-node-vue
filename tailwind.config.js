@@ -4,13 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'paleta-sac':{
-          DEFAULT: '#393e46',
-          '50': '#f7f7f7',
-          '100': '#eeeeee',
-          '200': '#929aab',
+        "paleta-sac": {
+          DEFAULT: "#393e46",
+          50: "#f7f7f7",
+          100: "#eeeeee",
+          200: "#929aab",
         },
-      }
+      },
     },
   },
   plugins: [],

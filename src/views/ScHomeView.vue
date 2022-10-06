@@ -109,20 +109,20 @@ export default {
 };
 </script>
 <style scoped>
-  .animation {
-      position: relative;
-      animation: animation 2s ease-out;
-    }
+.animation {
+  position: relative;
+  animation: animation 2s ease-out;
+}
 
-  @keyframes animation {
-      0% {
-        opacity: 0;
-        left: -700px;
-      }
+@keyframes animation {
+  0% {
+    opacity: 0;
+    left: -700px;
+  }
 
-      100% {
-        opacity: 1;
-        left: 0;
-      }
-    }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
 </style>
