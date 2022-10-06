@@ -50,7 +50,7 @@
         <input
           type="number"
           id="small-input"
-          class="block p-2 w-full rounded-lg border sm:text-xs focus:ring-blue-500 focus:border-blue-500 "
+          class="block p-2 w-full rounded-lg border sm:text-xs focus:ring-blue-500 focus:border-blue-500"
         />
       </div>
       <div>

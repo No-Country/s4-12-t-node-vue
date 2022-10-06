@@ -44,12 +44,12 @@ import LogoutIcon from "../../icons/logout.svg";
 const activeMenu = ref("Graph");
 
 const menus = [
-  { name: "Dashboard", icon: HomeIcon, path:"" },
-  { name: "Shopping", icon: ShoppingIcon, path:"" },
-  { name: "Graph", icon: GraphIcon, path:"" },
-  { name: "Messages", icon: MessageIcon, path:"" },
-  { name: "Notifications", icon: NotificationIcon, path:"" },
-  { name: "Settings", icon: SettingsIcon, path:"" },
-  { name: "Logout", icon: LogoutIcon, path:"login" },
+  { name: "Dashboard", icon: HomeIcon, path: "" },
+  { name: "Shopping", icon: ShoppingIcon, path: "" },
+  { name: "Graph", icon: GraphIcon, path: "" },
+  { name: "Messages", icon: MessageIcon, path: "" },
+  { name: "Notifications", icon: NotificationIcon, path: "" },
+  { name: "Settings", icon: SettingsIcon, path: "" },
+  { name: "Logout", icon: LogoutIcon, path: "login" },
 ];
 </script>
