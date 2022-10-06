@@ -3,6 +3,7 @@ import ScInput from "../components/Input/ScInput.vue";
 import ScText from "../components/Text/ScText.vue";
 import ScLabel from "../components/Label/ScLabel.vue";
 import ScButton from "../components/Button/ScButton.vue";
+// import { swal } from "sweetalert2/dist/sweetalert2";
 import { useRouter } from "vue-router";
 // import { ref } from "vue";
 
@@ -14,6 +15,8 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const handleSubmit = () => {
+  // this.$swal('Hello vue world');
+  // console.log(swal);
   router.push({ path: "login" });
 };
 </script>

@@ -8,6 +8,7 @@ import ScLockIcon from "../components/icons/ScLockIcon.vue";
 import ScButton from "../components/Button/ScButton.vue";
 import ScText from "../components/Text/ScText.vue";
 import ScButtonLink from "../components/Button/ScButtonLink.vue";
+import Swal from "sweetalert2";
 
 const router = useRouter();
 const emailValidationAlertMessage = ref("");
@@ -19,6 +20,7 @@ const emailValidationHandler = (e) => {
 };
 
 const submitHandler = () => {
+  Swal.fire("Hello");
   router.push({ name: "dashboard" });
 };
 

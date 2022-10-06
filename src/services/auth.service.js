@@ -12,14 +12,14 @@ const get = () => {
   return ApiRequest.get("/users");
 };
 
-const register = (nameUser, lastname, email, pass, confirmPass) => {
-  console.log(nameUser, lastname, email, pass, confirmPass);
+const register = (name, lastname, email, password, confirmPassword) => {
+  console.log(name, lastname, email, password, confirmPassword);
   return ApiRequest.post("/users/signup", {
-    nombre: nameUser,
+    nombre: name,
     apellidos: lastname,
     email,
-    password: pass,
-    confirmarPassword: confirmPass,
+    password,
+    confirmarPassword: confirmPassword,
   });
 };
 
