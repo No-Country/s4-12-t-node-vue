@@ -4,7 +4,7 @@
       <router-link to="/">
         <img
           class="fill-current h-24 w-24 mr-2"
-          src="../assets/logo.png"
+          src="../../assets/logo.png"
           alt="logo icon svg"
         />
       </router-link>

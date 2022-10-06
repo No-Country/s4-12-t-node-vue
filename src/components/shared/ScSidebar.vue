@@ -31,14 +31,14 @@
 
 <script setup>
 import { ref } from "vue";
-import FoodIcon from "../icons/food.svg";
-import HomeIcon from "../icons/home.svg";
-import ShoppingIcon from "../icons/shopping.svg";
-import GraphIcon from "../icons/graph.svg";
-import MessageIcon from "../icons/message.svg";
-import NotificationIcon from "../icons/notification.svg";
-import SettingsIcon from "../icons/settings.svg";
-import LogoutIcon from "../icons/logout.svg";
+import FoodIcon from "../../icons/food.svg";
+import HomeIcon from "../../icons/home.svg";
+import ShoppingIcon from "../../icons/shopping.svg";
+import GraphIcon from "../../icons/graph.svg";
+import MessageIcon from "../../icons/message.svg";
+import NotificationIcon from "../../icons/notification.svg";
+import SettingsIcon from "../../icons/settings.svg";
+import LogoutIcon from "../../icons/logout.svg";
 
 const activeMenu = ref("Graph");
 

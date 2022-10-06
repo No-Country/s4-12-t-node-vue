@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/ScHomeView.vue";
+import Home from "../views/ScHomeView.vue";
+import CondominiumDashboard from "../views/Dashboard/ScCondominiumDashboardView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +8,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: Home,
     },
     {
       path: "/login",
@@ -21,8 +22,21 @@ const router = createRouter({
     },
     {
       path: "/dashboard",
-      name: "dashboard",
-      component: () => import("../views/ScDashboardView.vue"),
+      name: "Dashboard",
+      component: () => import("../views/Dashboard/ScDashboardView.vue"),
+      children: [
+        {
+          path: "",
+          name: "index",
+          component: CondominiumDashboard,
+        },
+        // {
+        //   path: "condominium",
+        //   name: "condominium",
+        //   component: () =>
+        //     import("../views/Dashboard/ScCondominiumDashboardView.vue"),
+        // },
+      ],
     },
   ],
 });

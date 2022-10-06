@@ -1,5 +1,6 @@
 const state = () => ({
-  all: [],
+  user: {},
+  token: null,
 });
 
 const actions = {
@@ -19,6 +20,14 @@ const mutations = {
   //   const product = state.all.find(product => product.id === id)
   //   product.inventory--
   // }
+
+  updateUser(state, user) {
+    state.user = user;
+  },
+
+  setToken(state, token) {
+    state.token = token;
+  },
 };
 
 export default {

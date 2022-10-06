@@ -5,7 +5,7 @@
         class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-3"
       >
         <div class="p-4 flex items-center justify-center">
-          <img src="../assets/logo.png" alt="logo" style="width: 100px" />
+          <img src="../../assets/logo.png" alt="logo" style="width: 100px" />
         </div>
         <div class="p-4 flex items-center justify-center">
           <p>&copy;No-Country 2022</p>

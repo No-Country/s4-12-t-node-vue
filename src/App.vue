@@ -18,8 +18,8 @@
   </div>
 </template>
 <script>
-import NavBarVue from "../src/components/NavBarVue.vue";
-import FooterLanding from "../src/components/FooterLanding.vue";
+import NavBarVue from "../src/components/shared/ScNavbar.vue";
+import FooterLanding from "../src/components/shared/ScFooterLanding.vue";
 export default {
   components: {
     NavBarVue,
