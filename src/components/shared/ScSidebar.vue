@@ -13,8 +13,9 @@
             : ''
         "
       >
-        <button
-          class="p-4 my-2 mr-4 ml-3 rounded-xl"
+        <router-link
+          :to="menu.path"
+          class="p-4 my-2 mr-4 ml-3 rounded-xl block"
           @click="activeMenu = menu.name"
           :class="
             activeMenu === menu.name
@@ -23,7 +24,7 @@
           "
         >
           <Component :is="menu.icon" class="w-6 h-6" />
-        </button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -43,12 +44,12 @@ import LogoutIcon from "../../icons/logout.svg";
 const activeMenu = ref("Graph");
 
 const menus = [
-  { name: "Dashboard", icon: HomeIcon },
-  { name: "Shopping", icon: ShoppingIcon },
-  { name: "Graph", icon: GraphIcon },
-  { name: "Messages", icon: MessageIcon },
-  { name: "Notifications", icon: NotificationIcon },
-  { name: "Settings", icon: SettingsIcon },
-  { name: "Logout", icon: LogoutIcon },
+  { name: "Dashboard", icon: HomeIcon, path: "" },
+  { name: "Shopping", icon: ShoppingIcon, path: "" },
+  { name: "Graph", icon: GraphIcon, path: "" },
+  { name: "Messages", icon: MessageIcon, path: "" },
+  { name: "Notifications", icon: NotificationIcon, path: "" },
+  { name: "Settings", icon: SettingsIcon, path: "" },
+  { name: "Logout", icon: LogoutIcon, path: "login" },
 ];
 </script>

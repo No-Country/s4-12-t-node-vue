@@ -8,5 +8,5 @@ defineProps({
 });
 </script>
 <template>
-  <input :type="type" class="border p-1 w-full" />
+  <input :type="type" class="border p-1 w-full rounded-md" />
 </template>

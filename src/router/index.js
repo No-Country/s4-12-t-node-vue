@@ -22,7 +22,7 @@ const router = createRouter({
     },
     {
       path: "/dashboard",
-      name: "Dashboard",
+      name: "dashboard",
       component: () => import("../views/Dashboard/ScDashboardView.vue"),
       children: [
         {

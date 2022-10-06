@@ -8,7 +8,6 @@ import ScLockIcon from "../components/icons/ScLockIcon.vue";
 import ScButton from "../components/Button/ScButton.vue";
 import ScText from "../components/Text/ScText.vue";
 import ScButtonLink from "../components/Button/ScButtonLink.vue";
-import Swal from "sweetalert2";
 
 const router = useRouter();
 const emailValidationAlertMessage = ref("");
@@ -20,8 +19,7 @@ const emailValidationHandler = (e) => {
 };
 
 const submitHandler = () => {
-  Swal.fire("Hello");
-  router.push({ name: "dashboard" });
+  router.push({ path: "dashboard" });
 };
 
 const handleRedirect = () => {
@@ -30,7 +28,7 @@ const handleRedirect = () => {
 </script>
 <template>
   <form
-    class="border border-gray-700 w-11/12 sm:w-3/5 md:w-2/5 lg:w-2/6 px-4 py-5 rounded-md m-auto mt-48"
+    class="border border-gray-700 w-11/12 sm:w-3/5 md:w-2/5 lg:w-2/6 px-4 py-5 rounded-md m-auto my-32"
     @submit.prevent="submitHandler"
   >
     <ScText tag="h1" class="font-bold text-2xl mb-5">Login</ScText>
