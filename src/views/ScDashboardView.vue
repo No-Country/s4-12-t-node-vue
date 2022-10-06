@@ -7,9 +7,9 @@
   </div>
 </template>
 <script>
-/*import SideBar from "../components/SideBar.vue";*/
-/*import Card from "./components/Card.vue";*/
-/*import Table from "./components/Table.vue";*/
+/* import SideBar from "../components/SideBar.vue"; */
+/* import Card from "./components/Card.vue"; */
+/* import Table from "./components/Table.vue"; */
 import SideBar from "../components/SideBar.vue";
 export default {
   components: {
