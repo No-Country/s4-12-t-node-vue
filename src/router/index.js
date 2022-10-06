@@ -20,8 +20,8 @@ const router = createRouter({
       component: () => import("../views/ScRegisterView.vue"),
     },
     {
-      path: "/dashboard",
-      name: "dashboard",
+      path: "/Dashboard",
+      name: "Dashboard",
       component: () => import("../views/ScDashboardView.vue"),
     },
   ],
