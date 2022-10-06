@@ -101,10 +101,10 @@
   </section>
 </template>
 <script>
-import AnimatedComponent from "../components/AnimatedComponent.vue";
+// import AnimatedComponent from "../components/AnimatedComponent.vue";
 export default {
   components: {
-    AnimatedComponent,
+    // AnimatedComponent,
   },
 };
 </script>
