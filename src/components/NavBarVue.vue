@@ -1,28 +1,47 @@
 <template>
-  <ul class="nav">
-    <li><router-link to="/">Home</router-link></li>
-    <li><router-link to="/login">Inicio sesion</router-link></li>
-    <li><router-link to="/register">Registrar</router-link></li>
-    <li><router-link to="#">Contacto</router-link></li>
-    <li><router-link to="#">Nosotros</router-link></li>
-  </ul>
+  <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+    <div class="flex items-center flex-no-shrinkmr-6">
+      <router-link to="/">
+        <img class="fill-current h-24 w-24 mr-2"  src="../assets/logo.png" alt="logo icon svg" />
+      </router-link>
+    </div>
+    <div class="block sm:hidden">
+      <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-paleta-sac hover:border-paleta-sac">
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+      </button>
+    </div>
+    <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+      <ul class="nav text-sm sm:flex-grow sm: text-right">  
+        <li><router-link to="#about-us">Nosotros</router-link></li>
+        <li><router-link to="/login">Inicio de Sesión</router-link></li>
+        <li><router-link to="/register">Registrar</router-link></li>
+        <li><router-link to="#contact">Contacto</router-link></li>
+      </ul>
+    </div>
+  </nav>
 </template>
 
 <script>
 export default {
   name: "NavBarVue",
-};
+  data() {
+    return {
+      open: false,
+    }
+  },
+  methods: {
+  	toggle() {
+    	this.open = !this.open
+    }
+  }
+}
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
-
 .nav {
-  font-family: "Titillium Web";
   text-transform: uppercase;
-  text-align: center;
   font-weight: 600;
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .nav * {
@@ -34,12 +53,12 @@ export default {
   display: inline-block;
   list-style: outside none none;
   margin: 0.5em 1em;
-  paddin: 0;
+  padding: 0;
 }
 
 .nav a {
   padding: 0.5em 0.8em;
-  color: black;
+  color: #393e46;
   position: relative;
   text-decoration: none;
   font-size: 20px;
@@ -59,8 +78,8 @@ export default {
   content: "";
   right: 0;
   top: 0;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-top: 3px solid #393e46;
+  border-right: 3px solid #393e46;
   transform: translate(-100%, 50%);
 }
 
@@ -68,8 +87,8 @@ export default {
   content: "";
   left: 0;
   bottom: 0;
-  border-bottom: 3px solid black;
-  border-left: 3px solid black;
+  border-bottom: 3px solid #393e46;
+  border-left: 3px solid #393e46;
   transform: translate(100%, -50%);
 }
 
@@ -80,6 +99,6 @@ export default {
 }
 
 .nav a:hover {
-  color: black;
+  color: #393e46;
 }
 </style>

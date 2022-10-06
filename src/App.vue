@@ -2,13 +2,16 @@
   <div id="app">
     <NavBarVue></NavBarVue>
     <RouterView />
+    <FooterLanding />
   </div>
 </template>
 <script>
 import NavBarVue from "../src/components/NavBarVue.vue";
+import FooterLanding from "../src/components/FooterLanding.vue";
 export default {
   components: {
     NavBarVue,
+    FooterLanding,
   },
 };
 </script>

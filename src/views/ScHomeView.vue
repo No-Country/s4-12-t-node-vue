@@ -1,25 +1,25 @@
 <template>
-  <div class="container mx-auto p-6">
+  <div class="container mx-auto bg-paleta-sac-50 -my-6">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-2">
-      <div class="flex items-center justify-center">
-        <h1 class="font-black text-[38px] mx-2">
+      <div class="flex items-center justify-center animation">
+        <h1 class="font-black text-[36px] text-paleta-sac">
           EL MEJOR SISTEMA DE ADMINISTRACIÓN DE CONDOMINIOS
           <br />
           <router-link to="login">
             <button
-              class="bg-[#000000] text-[18px] hover:bg-[#393e46] text-white font-bold py-2 px-4 rounded"
+              class="bg-paleta-sac text-[18px] hover:bg-paleta-sac-200 text-white font-bold py-2 px-4 rounded"
             >
               Iniciar Sesión
             </button>
           </router-link>
         </h1>
       </div>
-      <div class="flex items-center justify-center">
+      <div class="items-center justify-center">
         <img src="../assets/black.gif" alt="" />
       </div>
     </div>
   </div>
-  <section id="que-es" class="bg-[#000000] py-6 text-[#f7f7f7]">
+  <section id="que-es" class="bg-paleta-sac py-6 text-paleta-sac-50">
     <div class="container mx-auto p-8">
       <div class="flex items-center justify-center">
         <h1 class="font-black text-[38px] mx-2">¿QUÉ ES?</h1>
@@ -30,7 +30,7 @@
           administradores de condominio.
         </p>
       </div>
-      <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700" />
+      <hr class="my-8 h-px bg-paleta-sac-50 border-0" />
       <div class="flex items-end justify-end mt-4">
         <p class="text-[28px] pl-12">
           El sistema permite llevar el control de los propietarios de una o mas
@@ -40,12 +40,12 @@
       </div>
     </div>
   </section>
-  <section id="que-es" class="bg-[#f7f7f7] py-6">
+  <section id="que-es" class="bg-paleta-sac-50 text-paleta-sac py-6">
     <div class="container mx-auto p-8">
       <div class="flex items-start justify-start">
         <h1 class="font-black text-[38px] mx-2">¿QUÉ OFRECEMOS?</h1>
       </div>
-      <div class="divide-y pl-16 divide-black py-6">
+      <div class="divide-y pl-16 divide-paleta-sac py-6">
         <div class="py-2">
           <span class="font-bold">Gestión de Torres: </span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -100,3 +100,29 @@
     </div>
   </section>
 </template>
+<script>
+import AnimatedComponent from "../components/AnimatedComponent.vue";
+export default {
+  components: {
+    AnimatedComponent,
+  },
+};
+</script>
+<style scoped>
+  .animation {
+      position: relative;
+      animation: animation 2s ease-out;
+    }
+
+  @keyframes animation {
+      0% {
+        opacity: 0;
+        left: -700px;
+      }
+
+      100% {
+        opacity: 1;
+        left: 0;
+      }
+    }
+</style>
