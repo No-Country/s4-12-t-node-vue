@@ -7,6 +7,8 @@ import ScInput from "../components/Input/ScInput.vue";
 import ScLockIcon from "../components/icons/ScLockIcon.vue";
 import ScButton from "../components/Button/ScButton.vue";
 import ScText from "../components/Text/ScText.vue";
+import ScButtonLink from "../components/Button/ScButtonLink.vue";
+import Swal from "sweetalert2";
 
 const router = useRouter();
 const emailValidationAlertMessage = ref("");
@@ -18,12 +20,17 @@ const emailValidationHandler = (e) => {
 };
 
 const submitHandler = () => {
-  router.push({ name: "Dashboard" });
+  Swal.fire("Hello");
+  router.push({ name: "dashboard" });
+};
+
+const handleRedirect = () => {
+  router.push({ name: "register" });
 };
 </script>
 <template>
   <form
-    class="border border-gray-700 w-4/12 px-4 py-5 rounded-md m-auto mt-48"
+    class="border border-gray-700 w-11/12 sm:w-3/5 md:w-2/5 lg:w-2/6 px-4 py-5 rounded-md m-auto mt-48"
     @submit.prevent="submitHandler"
   >
     <ScText tag="h1" class="font-bold text-2xl mb-5">Login</ScText>
@@ -65,5 +72,14 @@ const submitHandler = () => {
       passwordValidationAlertMessage
     }}</ScText>
     <ScButton type="submit">Iniciar sesion</ScButton>
+    <div class="mt-4 m-auto">
+      <ScText class="text-sm">¿Aún no tiene cuenta? </ScText
+      ><ScButtonLink
+        type="button"
+        class="text-sky-700 text-sm"
+        @click="handleRedirect"
+        >Crear una cuenta</ScButtonLink
+      >
+    </div>
   </form>
 </template>
