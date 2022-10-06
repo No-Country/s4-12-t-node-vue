@@ -8,7 +8,6 @@ const actions = {
   //   const products = await shop.getProducts();
   //   commit("setProducts", products);
   // },
-  
 };
 
 const getters = {};
@@ -22,13 +21,13 @@ const mutations = {
   //   product.inventory--
   // }
 
-  updateUser(state, user){
+  updateUser(state, user) {
     state.user = user;
   },
 
-  setToken(state, token){
+  setToken(state, token) {
     state.token = token;
-  }
+  },
 };
 
 export default {

@@ -20,7 +20,7 @@ const emailValidationHandler = (e) => {
 };
 
 const submitHandler = () => {
-  Swal.fire('Hello');
+  Swal.fire("Hello");
   router.push({ name: "dashboard" });
 };
 
