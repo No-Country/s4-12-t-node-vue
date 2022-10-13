@@ -35,10 +35,12 @@
     <!--Segundos Botones-->
     <div class="flex flex-wrap -m-4 text-center">
       <div class="items-center md:w-1/4 sm:w-1/2 w-full p-4 ">
-        <div class="px-4 py-6 transition-colors duration-300 transform border-2 border-paleta-sac-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-paleta-sac">
-          <TowerIcon class="text-paleta-sac-300 hover:text-paleta-sac-50 group-hover:text-paleta-sac-50 w-12 h-12 mb-3 inline-block"/>
-          <p class="mt-2 text-paleta-sac-300 capitalize group-hover:text-paleta-sac-50">Gestión de Torres</p>
-        </div>
+        <router-link to="/dashboard/tower">
+          <div class="px-4 py-6 transition-colors duration-300 transform border-2 border-paleta-sac-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-paleta-sac">
+            <TowerIcon class="text-paleta-sac-300 hover:text-paleta-sac-50 group-hover:text-paleta-sac-50 w-12 h-12 mb-3 inline-block"/>
+            <p class="mt-2 text-paleta-sac-300 capitalize group-hover:text-paleta-sac-50">Gestión de Torres</p>
+          </div>
+        </router-link>
       </div>
       <div class="items-center md:w-1/4 sm:w-1/2 w-full p-4 ">
         <div class="px-4 py-6 transition-colors duration-300 transform border-2 border-paleta-sac-300 cursor-pointer rounded-xl hover:border-transparent group hover:bg-paleta-sac">
