@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col gap-y-4 items-center py-8 w-24 bg-paleta-sac">
-    <button class="p-2 bg-opacity-10 text-gray-200 rounded-xl bg-white">
+  <div class="flex flex-col gap-y-4 items-center py-8 w-24 bg-paleta-sac-300">
+    <button class="p-2 bg-opacity-10 text-paleta-sac-400 rounded-xl bg-white">
       <FoodIcon />
     </button>
     <div class="flex flex-col gap-y-2 items-end self-end">
@@ -9,7 +9,7 @@
         :key="menu.menu"
         :class="
           activeMenu === menu.name
-            ? 'bg-gray-100 rounded-l-xl relative before:absolute before:w-4 before:h-8 before:-top-8 before:rounded-br-xl before:right-0 before:shadow-inverse-top after:absolute after:w-4 after:h-8 after:-bottom-8 after:rounded-tr-xl after:right-0 after:shadow-inverse-bottom'
+            ? 'bg-paleta-sac-400 rounded-l-xl relative before:absolute before:w-4 before:h-8 before:-top-8 before:rounded-br-xl before:right-0 before:shadow-inverse-top after:absolute after:w-4 after:h-8 after:-bottom-8 after:rounded-tr-xl after:right-0 after:shadow-inverse-bottom'
             : ''
         "
       >
@@ -19,8 +19,8 @@
           @click="activeMenu = menu.name"
           :class="
             activeMenu === menu.name
-              ? 'text-white shadow-error bg-paleta-sac'
-              : 'text-paleta-sac-200'
+              ? 'text-white shadow-error bg-paleta-sac-300'
+              : 'text-paleta-sac-400'
           "
         >
           <Component :is="menu.icon" class="w-6 h-6" />
@@ -44,12 +44,12 @@ import LogoutIcon from "../../icons/logout.svg";
 const activeMenu = ref("Graph");
 
 const menus = [
-  { name: "Dashboard", icon: HomeIcon, path: "" },
-  { name: "Shopping", icon: ShoppingIcon, path: "" },
-  { name: "Graph", icon: GraphIcon, path: "" },
-  { name: "Messages", icon: MessageIcon, path: "" },
-  { name: "Notifications", icon: NotificationIcon, path: "" },
-  { name: "Settings", icon: SettingsIcon, path: "" },
-  { name: "Logout", icon: LogoutIcon, path: "login" },
+  { name: "Dashboard", icon: NotificationIcon, path: "/dashboard/home" },
+  { name: "Tower", icon: ShoppingIcon, path: "/dashboard/tower" },
+  { name: "Owners", icon: GraphIcon, path: "/dashboard/apartment" },
+  { name: "Payment", icon: MessageIcon, path: "/dashboard/payment" },
+  { name: "Pay", icon: NotificationIcon, path: "/dashboard/pay" },
+  { name: "Settings", icon: SettingsIcon, path: "/dashboard/profile" },
+  { name: "Logout", icon: NotificationIcon, path: "/" },
 ];
 </script>
