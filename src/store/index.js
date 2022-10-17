@@ -19,17 +19,14 @@ export default createStore({
     products: [],
     cart: [],
     usuarios: [],
-    
   },
   strict: debug,
   plugins: debug ? [createLogger()] : [],
 
   mutations: {
-
     obtenerProductos(state, payload) {
       state.products = payload;
     },
-
   },
 
   actions: {
@@ -40,6 +37,5 @@ export default createStore({
       let data = resp.data;
       commit("obtenerProductos", data);
     },
-
-  }
+  },
 });

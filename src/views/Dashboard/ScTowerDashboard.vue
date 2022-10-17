@@ -1,5 +1,5 @@
 <template>
-<!-- <section class="text-gray-600 body-font">
+  <!-- <section class="text-gray-600 body-font">
   <div class="container px-5 py-5 mx-auto">
     <div class="flex w-full mb-20 flex-wrap">
       <h1 class="sm:text-3xl text-2xl font-medium title-font text-paleta-sac-300 lg:w-1/3 lg:mb-0 mb-4">
@@ -74,33 +74,28 @@
       </section>
   </div>
 </section> -->
-<div>
   <div>
-    <div v-for="(item, index) in $store.state.products" :key="index">
-      <div class="productos">
-        <div class="card" style="width: 18rem">
-          <h5 class="card-title text-center">{{ item.titulo }}</h5>
-          <img class="img-card" :src="item.imagen" alt="" />
-          <!-- <img :src="getImgUrl()" class="card-img-top d-block w-50" :alt="titulo"> -->
-          <div class="card-body">
-            <p class="card-text">${{ item.precio }}</p>
-            <button class="btn btn-success text-center">
-              Agregar
-            </button>
+    <div>
+      <div v-for="(item, index) in $store.state.products" :key="index">
+        <div class="productos">
+          <div class="card" style="width: 18rem">
+            <h5 class="card-title text-center">{{ item.titulo }}</h5>
+            <img class="img-card" :src="item.imagen" alt="" />
+            <!-- <img :src="getImgUrl()" class="card-img-top d-block w-50" :alt="titulo"> -->
+            <div class="card-body">
+              <p class="card-text">${{ item.precio }}</p>
+              <button class="btn btn-success text-center">Agregar</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
-
-  export default {
-  components: {
-  
-  },
+export default {
+  components: {},
 
   mounted() {
     this.$store.dispatch("getProducts");
@@ -109,7 +104,7 @@
 </script>
 
 <style scoped>
-  .productos {
+.productos {
   text-align: center;
   padding: 15px;
   margin: auto;
