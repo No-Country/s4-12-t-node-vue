@@ -31,10 +31,10 @@ export default createStore({
 
   actions: {
     async getProducts({ commit }) {
-      let resp = await axios.get(
+      const resp = await axios.get(
         "https://62e1c00cfa99731d75dbab30.mockapi.io/api/products"
       );
-      let data = resp.data;
+      const data = resp.data;
       commit("obtenerProductos", data);
     },
   },
