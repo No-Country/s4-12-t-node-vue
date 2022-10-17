@@ -37,7 +37,7 @@ import GraphIcon from "../../icons/graph.svg";
 import MessageIcon from "../../icons/message.svg";
 import NotificationIcon from "../../icons/notification.svg";
 import SettingsIcon from "../../icons/settings.svg";
-import LogoutIcon from "../../icons/logout.svg";
+// import LogoutIcon from "../../icons/logout.svg";
 
 const activeMenu = ref("Graph");
 

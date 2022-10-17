@@ -130,10 +130,10 @@
 // import PaymentIcon from "../../icons/notification.svg";
 export default {
   components: {
-    OwnersIcon,
-    TowerIcon,
-    PaymentIcon,
-    PayIcon,
+    // OwnersIcon,
+    // TowerIcon,
+    // PaymentIcon,
+    // PayIcon,
   },
 };
 </script>
