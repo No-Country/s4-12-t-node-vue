@@ -4,7 +4,7 @@ import ScText from "../components/Text/ScText.vue";
 import ScLabel from "../components/Label/ScLabel.vue";
 import ScButton from "../components/Button/ScButton.vue";
 // import { swal } from "sweetalert2/dist/sweetalert2";
-import { useRouter } from "vue-router";
+// import { useRouter } from "vue-router";
 import AuthService from "../services/auth.service";
 import { ref } from "vue";
 
