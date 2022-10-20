@@ -68,38 +68,121 @@
     </div>
   </div>
   <!--¿Qué es?-->
-  <div id="que-es" class="container sm:py-12 lg:py-12 md:py-12 xl:py-12 mx-auto flex flex-wrap items-center">
-    <h1 class="z-10 font-nunito title-font text-center sm:text-4xl text-3xl sm:-mb-24 lg:-mb-24 md:-mb-24">
-      El mejor Sistema de 
-      <span class="font-black ">
-        Administración de Condominios.
-      </span>
-    </h1>
-    <div class="lg:w-1/2 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-      <h1 class="title-font font-medium text-3xl text-gray-900">Slow-carb next level shoindcgoitch ethical authentic, poko scenester</h1>
-      <p class="leading-relaxed mt-4">Poke slow-carb mixtape knausgaard, typewriter street art gentrify hammock starladder roathse. Craies vegan tousled etsy austin.</p>
+  <div id="que-es" class="container py-8 sm:py-16 lg:py-16 md:py-16 xl:py-12 mx-auto flex flex-wrap items-center">
+    <div class="w-full text-center">
+      <h1 class="font-nunito title-font sm:text-4xl text-3xl">
+        ¿Qué es el Sistema de
+        <span class="font-black ">
+          Administración de Condominios?
+        </span>
+      </h1>
     </div>
-    <div class="bg-sac-300 lg:w-1/2 md:w-1/2 p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-      <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign Up</h2>
-      <div class="relative mb-4">
-        <label for="full-name" class="leading-7 text-sm text-gray-600">Full Name</label>
-        <input type="text" id="full-name" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    <div class="lg:w-1/2 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+      <img alt="relax-sac" class="lg:w-4/5 w-full lg:h-auto object-cover object-center" src="../assets/relax.gif">
+    </div>
+    <div class="bg-sac-300 lg:w-1/2 md:w-1/2 px-8 py-14 flex flex-col md:ml-auto w-full">
+      <p class="leading-relaxed font-mono mxtext-lg mx-6 my-24 text-sac-400">
+        El sistema de administración de condominios permite llevar el control de los propietarios de una o más torres, además permite gestionar el cobro y pago de las cuotas de condominio, aplicando el calculo de mora por retraso, si aplica.
+      </p>
+    </div>
+  </div>
+  <!--Somos-->
+  <div id="somos" class="container px-5 py-16 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="font-nunito title-font sm:text-4xl text-3xl">
+        Somos el
+        <span class="font-black ">
+          héreo que necesitas en tú vida
+        </span>
+      </h1>
+      <p class="leading-relaxed font-mono mxtext-lg m-6">
+        Facilitamos el trabajo a los administradores de condominio
+      </p>
+      <router-link to="register">
+        <button
+          class="bg-sac-300 shadow hover:bg-sac text-white font-mono py-3 px-8 rounded"
+        >
+          Registrate
+        </button>
+      </router-link>
+    </div>
+  </div>
+  <!--Servicios-->
+  <div class="bg-sac-300">
+    <div id="servicios" class="container px-5 py-16 mx-auto text-sac-400">
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1 class="font-nunito font-black title-font sm:text-4xl text-3xl">
+          Ofrecemos para ti
+        </h1>
+        <p class="leading-relaxed font-mono mxtext-lg m-6">
+          Los mejores servicios para los administradores de condominio
+        </p>
       </div>
-      <div class="relative mb-4">
-        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      <div class="font-mono flex flex-wrap sm:-m-4 -mx-4 md:space-y-0 space-y-6">
+        <div class="py-6 px-12 md:w-1/2 flex hover:bg-sac ">
+          <div class="w-16 h-16 inline-flex items-center justify-center mb-4 flex-shrink-0">
+            <Tower class="invert" />
+          </div>
+          <div class="flex-grow px-2">
+            <h2 class="text-sac-400 text-2xl title-font font-black mb-2">GESTIÓN DE TORRES</h2>
+            <p class="leading-relaxed text-base text-justify	">
+              El sistema permite agregar un
+              número ilimitados de torres, las
+              cuales estaran disponibles para
+              la administración de su
+              condominio, asignando una cuota
+              por apartamento y porcentaje de
+              mora.
+            </p>
+          </div>
+        </div>
+        <div class="py-6 px-12 md:w-1/2 flex hover:bg-sac ">
+          <div class="w-16 h-16 inline-flex items-center justify-center mb-4 flex-shrink-0">
+            <Owner class="invert" />
+          </div>
+          <div class="flex-grow px-2">
+            <h2 class="text-sac-400 text-2xl title-font font-black mb-2">GESTIÓN DE PROPIETARIOS</h2>
+            <p class="leading-relaxed text-base text-justify	">
+              El sistema permite anexar los
+              datos del propietario de cada
+              apartamento de una torre que se
+              encuentre administrada. Dichos
+              datos permitiran el cobro de las
+              cuotas.
+            </p>
+          </div>
+        </div>
       </div>
-      <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-      <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+    </div>
+  </div>
+  <!--Team-->
+  <div id="somos" class="container px-5 py-16 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="font-nunito font-black title-font sm:text-4xl text-3xl">
+        Nuestro Equipo
+      </h1>
+      <p class="leading-relaxed font-mono mxtext-lg m-6">
+        Contamos con el mejor equipo de desarrolladores para brindarte una experiencia fascinante.
+      </p>
+    </div>
+    <div class="flex items-center justify-center">
+      <div class="flex items-center p-1 border border-sac-300 rounded-xl">
+        <button class="px-4 py-2 text-sm font-medium text-sac-400 capitalize bg-sac-300 md:py-3 rounded-xl md:px-12">Front-End</button>
+        <button class="px-4 py-2 mx-4 text-sm font-medium text-sac-300 capitalize transition-colors duration-300 md:py-3  focus:outline-none hover:bg-sac-300 hover:text-white rounded-xl md:mx-8 md:px-12">Back-End</button>
+      </div>
     </div>
   </div>
 </div>
 </template>
 <script>
 // import AnimatedComponent from "../components/AnimatedComponent.vue";
+import Tower from "../icons/tower.svg";
+import Owner from "../icons/owner.svg";
 export default {
   components: {
     // AnimatedComponent,
+    Tower,
+    Owner,
   },
 };
 </script>
