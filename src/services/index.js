@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL_BASE_API = "https://ghibliapi.herokuapp.com/";
+const URL_BASE_API = "https://ghibliapi.herokuapp.com/api/";
 
 export const ApiRequest = axios.create({
   baseURL: URL_BASE_API,

@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/ScHomeView.vue";
+import Home from "../views/ScHomeView.vue";
+import CondominiumDashboard from "../views/Dashboard/ScCondominiumDashboardView.vue";
+import HomeDashboard from "../views/Dashboard/ScHomeDashboard.vue";
+import TowerDashboard from "../views/Dashboard/ScTowerDashboard.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,7 +10,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomeView,
+      component: Home,
     },
     {
       path: "/login",
@@ -20,9 +23,26 @@ const router = createRouter({
       component: () => import("../views/ScRegisterView.vue"),
     },
     {
-      path: "/Dashboard",
-      name: "Dashboard",
-      component: () => import("../views/ScDashboardView.vue"),
+      path: "/dashboard",
+      name: "dashboard",
+      component: () => import("../views/Dashboard/ScDashboardView.vue"),
+      children: [
+        {
+          path: "",
+          name: "index",
+          component: CondominiumDashboard,
+        },
+        {
+          path: "/dashboard/home",
+          name: "HomeDashboard",
+          component: HomeDashboard,
+        },
+        {
+          path: "/dashboard/tower",
+          name: "TowerDashboard",
+          component: TowerDashboard,
+        },
+      ],
     },
   ],
 });
