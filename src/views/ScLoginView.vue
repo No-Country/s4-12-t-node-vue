@@ -23,13 +23,14 @@ const password = ref("123456789");
 
 const store = useStore();
 
-const submitHandler = () => {
+const submitHandler = async () => {
   // console.log(AuthService.login())
-  AuthService.login(email.value, password.value);
-  store.commit("auth/updateUser", {
-    name: "walter",
-    email: "dyangelttk@gmail.com",
-  });
+  console.log(await AuthService.login(email.value, password.value));
+
+  // store.commit("auth/updateUser", {
+  //   name: "walter",
+  //   email: "dyangelttk@gmail.com",
+  // });
   console.log(store.state.auth.user);
   // router.push({ path: "dashboard" });
 };
