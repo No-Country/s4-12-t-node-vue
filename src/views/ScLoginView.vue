@@ -25,7 +25,7 @@ const store = useStore();
 
 const submitHandler = async () => {
   // console.log(AuthService.login())
-  console.log( await AuthService.login(email.value, password.value));
+  console.log(await AuthService.login(email.value, password.value));
 
   // store.commit("auth/updateUser", {
   //   name: "walter",
