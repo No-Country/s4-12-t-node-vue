@@ -26,7 +26,7 @@ const handleSubmit = (e) => {
     lastname.value,
     email.value,
     password.value,
-    confirmPassword.value,
+    confirmPassword.value
   );
   // router.push({ path: "login" });
 };
