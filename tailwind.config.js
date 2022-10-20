@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "paleta-sac": {
+        "sac": {
           DEFAULT: "#393e46",
           50: "#f7f7f7",
           100: "#eeeeee",
@@ -12,6 +12,10 @@ module.exports = {
           300: "#000000",
           400: "#ffffff",
         },
+      fontFamily: {
+        nunito: ["Nunito", "sans-serif"],
+        mono: ["Space Mono", "monospace"],
+      },
       },
     },
   },
