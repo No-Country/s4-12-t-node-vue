@@ -12,9 +12,7 @@ export default createStore({
     auth,
   },
   state: {
-
     products: [],
-  
   },
   strict: debug,
   plugins: debug ? [createLogger()] : [],
