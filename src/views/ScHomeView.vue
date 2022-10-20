@@ -168,7 +168,7 @@
     <div class="flex items-center justify-center">
       <div class="flex items-center p-1 border border-sac-300 rounded-xl">
         <button class="px-4 py-2 text-sm font-medium text-sac-400 capitalize bg-sac-300 md:py-3 rounded-xl md:px-12">Front-End</button>
-        <button class="px-4 py-2 mx-4 text-sm font-medium text-sac-300 capitalize transition-colors duration-300 md:py-3  focus:outline-none hover:bg-sac-300 hover:text-white rounded-xl md:mx-8 md:px-12">Back-End</button>
+        <button class="px-4 py-2 text-sm font-medium text-sac-300 capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-sac hover:text-sac-400 rounded-xl md:px-12">Backend</button>
       </div>
     </div>
   </div>
