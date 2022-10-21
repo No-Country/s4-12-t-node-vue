@@ -59,7 +59,6 @@
                     class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                     id="grid-password"
                     type="text"
-                  
                   />
                 </div>
               </div>
@@ -72,7 +71,7 @@
               </button>
               <button
                 @click="onToggle"
-                class="mb-2 md:mb-0 bg-gray-500 border  px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-md hover:shadow-lg "
+                class="mb-2 md:mb-0 bg-gray-500 border px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-md hover:shadow-lg"
               >
                 Cancelar
               </button>
