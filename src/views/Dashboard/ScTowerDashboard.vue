@@ -9,6 +9,8 @@
         </h1>
       </div>
       <section class="rounded shadow-2xl text-gray-600 body-font p-4">
+
+        <!-- ------------------------MODAL----------------------------- -->
         <div x-data="{ isOpen: true }">
           <button
             @click="isOpen = true"
