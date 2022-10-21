@@ -18,7 +18,7 @@
           class="w-full max-w-lg p-3 relative mx-auto my-auto rounded-xl shadow-lg bg-white"
         >
           <div>
-            <form class="w-full max-w-lg">
+            <form @submit.prevent class="w-full max-w-lg">
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label
@@ -62,20 +62,20 @@
                   />
                 </div>
               </div>
+              <div class="p-3 mt-2 text-center space-x-4 md:block">
+                <button
+                  class="mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-md hover:shadow-lg hover:bg-gray-100"
+                >
+                  Registrar
+                </button>
+                <button
+                  @click="onToggle"
+                  class="mb-2 md:mb-0 bg-gray-500 border px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-md hover:shadow-lg"
+                >
+                  Cancelar
+                </button>
+              </div>
             </form>
-            <div class="p-3 mt-2 text-center space-x-4 md:block">
-              <button
-                class="mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-md hover:shadow-lg hover:bg-gray-100"
-              >
-                Registrar
-              </button>
-              <button
-                @click="onToggle"
-                class="mb-2 md:mb-0 bg-gray-500 border px-5 py-2 text-sm shadow-sm font-medium tracking-wider text-white rounded-md hover:shadow-lg"
-              >
-                Cancelar
-              </button>
-            </div>
           </div>
         </div>
       </div>
