@@ -66,10 +66,10 @@ export default {
     };
   },
 
-  created(){
-    towerService.getTorres().then((resp) => { 
+  created() {
+    towerService.getTorres().then((resp) => {
       this.towers = resp;
-    })
+    });
   },
 };
 </script>
