@@ -25,15 +25,15 @@
                   <h2
                     class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1"
                   >
-                   {{item.name}}
+                    {{ item.name }}
                   </h2>
                   <h1 class="title-font text-lg font-medium text-gray-600 mb-3">
-                    {{item.id}}
+                    {{ item.id }}
                   </h1>
                   <p class="leading-relaxed mb-3">
                     Direccion: calle Guemes 2564 barrio Los Cardales.
                   </p>
-                  <h1>numero de apartamentos {{item.apartamentos.length}}</h1>
+                  <h1>numero de apartamentos {{ item.apartamentos.length }}</h1>
                   <div class="flex items-center flex-wrap">
                     <button
                       class="bg-gradient-to-r from-gray-400 to-gray-400 hover:scale-105 drop-shadow-md px-4 py-1 rounded-lg"
@@ -66,11 +66,10 @@ export default {
   },
 
   computed: {
-     getTower() {
+    getTower() {
       let data = towerService.getTorres();
-      console.log(data)
+      console.log(data);
       return data;
-      
     },
   },
 };
