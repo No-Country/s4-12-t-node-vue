@@ -1,3 +1,24 @@
+<script>
+// import AnimatedComponent from "../components/AnimatedComponent.vue";
+import Tower from "../icons/tower.svg";
+import Owner from "../icons/owner.svg";
+import TeamFront from "../components/Other/ScTeamFront.vue";
+
+export default {
+  components: {
+    // AnimatedComponent,
+    Tower,
+    Owner,
+    TeamFront,
+  },
+  data() {
+    return {
+      team: true,
+    }
+  },
+};
+</script>
+
 <template>
 <div>
   <!--Hero-->
@@ -167,25 +188,15 @@
     </div>
     <div class="flex items-center justify-center">
       <div class="flex items-center p-1 border border-sac-300 rounded-xl">
-        <button class="px-4 py-2 text-sm font-medium text-sac-400 capitalize bg-sac-300 md:py-3 rounded-xl md:px-12">Front-End</button>
-        <button class="px-4 py-2 text-sm font-medium text-sac-300 capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-sac hover:text-sac-400 rounded-xl md:px-12">Backend</button>
+        <button class="px-4 py-2 text-sm font-medium text-sac-400 capitalize bg-sac-300 md:py-3 rounded-xl md:px-12" @click="team = !team">Front-End</button>
+        <button class="px-4 py-2 text-sm font-medium text-sac-300 capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-sac hover:text-sac-400 rounded-xl md:px-12" @click="team = team">Backend</button>
       </div>
     </div>
+    <TeamFront v-if="team"/>
   </div>
 </div>
 </template>
-<script>
-// import AnimatedComponent from "../components/AnimatedComponent.vue";
-import Tower from "../icons/tower.svg";
-import Owner from "../icons/owner.svg";
-export default {
-  components: {
-    // AnimatedComponent,
-    Tower,
-    Owner,
-  },
-};
-</script>
+
 <style scoped>
 .animation {
   position: relative;
