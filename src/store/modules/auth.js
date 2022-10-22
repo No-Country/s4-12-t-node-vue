@@ -1,7 +1,7 @@
-const state = () => ({
+const state = {
   user: {},
   token: null,
-});
+};
 
 const actions = {
   // async getAllProducts({ commit }) {

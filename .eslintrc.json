@@ -10,5 +10,8 @@
     "sourceType": "module"
   },
   "plugins": ["vue"],
-  "rules": {}
+  "rules": {
+    "import/no-duplicates": "off",
+    "vue/no-unused-components": "off"
+  }
 }

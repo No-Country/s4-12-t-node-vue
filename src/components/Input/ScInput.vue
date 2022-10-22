@@ -5,8 +5,16 @@ defineProps({
     required: false,
     default: "text",
   },
+  modelValue: String,
 });
+
+defineEmits(["update:modelValue"]);
 </script>
 <template>
-  <input :type="type" class="border p-1 w-full rounded-md" />
+  <input
+    :type="type"
+    :value="modelValue"
+    @input="$emit('update:modelValue', $event.target.value)"
+    class="border p-1 w-full rounded-md"
+  />
 </template>

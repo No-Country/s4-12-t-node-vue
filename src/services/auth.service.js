@@ -1,8 +1,8 @@
 import Cookies from "js-cookie";
-import { ApiRequest } from "@/service/index";
+import { ApiRequest } from "@/services/index";
 
 const login = (user, pass) => {
-  return ApiRequest.post("/users/login", {
+  return ApiRequest.post("/api/login", {
     email: user,
     password: pass,
   });
@@ -12,9 +12,9 @@ const get = () => {
   return ApiRequest.get("/users");
 };
 
-const register = (name, lastname, email, password, confirmPassword) => {
+const signup = (name, lastname, email, password, confirmPassword) => {
   console.log(name, lastname, email, password, confirmPassword);
-  return ApiRequest.post("/users/signup", {
+  return ApiRequest.post("/api/signup", {
     nombre: name,
     apellidos: lastname,
     email,
@@ -40,7 +40,7 @@ const deleteAccessToken = () => {
 
 export default {
   login,
-  register,
+  signup,
   get,
   setAccessToken,
   getAccessToken,

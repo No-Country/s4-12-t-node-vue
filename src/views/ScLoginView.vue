@@ -8,18 +8,31 @@ import ScLockIcon from "../components/icons/ScLockIcon.vue";
 import ScButton from "../components/Button/ScButton.vue";
 import ScText from "../components/Text/ScText.vue";
 import ScButtonLink from "../components/Button/ScButtonLink.vue";
+import AuthService from "../services/auth.service";
+// import store from "../store/index";
+import { useStore } from "vuex";
 
 const router = useRouter();
 const emailValidationAlertMessage = ref("");
 const passwordValidationAlertMessage = ref("");
-// const email = ref("");
-// const password = ref("");
-const emailValidationHandler = (e) => {
-  emailValidationAlertMessage.value = e.target.value;
-};
+const email = ref("dyangeltk17@gmail.com");
+const password = ref("123456789");
+// const emailValidationHandler = (e) => {
+//   emailValidationAlertMessage.value = e.target.value;
+// };
 
-const submitHandler = () => {
-  router.push({ path: "dashboard" });
+const store = useStore();
+
+const submitHandler = async () => {
+  // console.log(AuthService.login())
+  console.log(await AuthService.login(email.value, password.value));
+
+  // store.commit("auth/updateUser", {
+  //   name: "walter",
+  //   email: "dyangelttk@gmail.com",
+  // });
+  console.log(store.state.auth.user);
+  // router.push({ path: "dashboard" });
 };
 
 const handleRedirect = () => {
@@ -37,9 +50,8 @@ const handleRedirect = () => {
         <ScInput
           class="pl-8"
           type="email"
-          v-model.lazy="emailValidationHandler"
+          v-model="email"
           placeholder="dyangeltk17@gmail.com"
-          value="dyangeltk17@gmail.com"
           required
         />
       </template>
@@ -56,7 +68,7 @@ const handleRedirect = () => {
     }}</ScText>
     <ScInputIcon>
       <template #input>
-        <ScInput class="pl-8" type="password" value="123456" />
+        <ScInput class="pl-8" v-model="password" type="password" />
       </template>
       <template #icon>
         <ScLockIcon
