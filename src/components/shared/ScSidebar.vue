@@ -13,7 +13,7 @@
             : ''
         "
       >
-        <router-link
+        <!-- <router-link
           v-if="menu.name.includes('Logout')"
           class="p-4 my-2 mr-4 ml-3 rounded-xl block"
           @click="handleLogout"
@@ -24,9 +24,8 @@
           "
         >
           <Component :is="menu.icon" class="w-6 h-6" />
-        </router-link>
+        </router-link> -->
         <router-link
-          v-else
           :to="menu.path"
           class="p-4 my-2 mr-4 ml-3 rounded-xl block"
           @click="activeMenu = menu.name"
