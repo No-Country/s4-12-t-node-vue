@@ -2,7 +2,7 @@ import { ApiRequest } from "@/services/index";
 
 const addTorre = (name) => {
   return ApiRequest.post("/add_torre", {
-    name: name,
+    name,
   });
 };
 
