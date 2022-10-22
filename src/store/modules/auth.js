@@ -29,10 +29,10 @@ const mutations = {
     state.token = token;
   },
 
-  logout(state, user){
+  logout(state, user) {
     state.user = {};
     state.token = null;
-  }
+  },
 };
 
 export default {

@@ -53,7 +53,7 @@ import MessageIcon from "../../icons/message.svg";
 import NotificationIcon from "../../icons/notification.svg";
 import SettingsIcon from "../../icons/settings.svg";
 // import LogoutIcon from "../../icons/logout.svg";
-import {} from "../../store/"
+import {} from "../../store/";
 
 const activeMenu = ref("Graph");
 
@@ -67,7 +67,5 @@ const menus = [
   { name: "Logout", icon: NotificationIcon, path: "/" },
 ];
 
-const handleLogout = () => {
-  
-}
+const handleLogout = () => {};
 </script>
