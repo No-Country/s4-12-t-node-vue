@@ -124,16 +124,16 @@
 </template>
 
 <script>
-import TowerIcon from "../../icons/notification.svg";
-import OwnersIcon from "../../icons/notification.svg";
-import PayIcon from "../../icons/notification.svg";
-import PaymentIcon from "../../icons/notification.svg";
+// import TowerIcon from "../../icons/notification.svg";
+// import OwnersIcon from "../../icons/notification.svg";
+// import PayIcon from "../../icons/notification.svg";
+// import PaymentIcon from "../../icons/notification.svg";
 export default {
   components: {
-    OwnersIcon,
-    TowerIcon,
-    PaymentIcon,
-    PayIcon,
+    // OwnersIcon,
+    // TowerIcon,
+    // PaymentIcon,
+    // PayIcon,
   },
 };
 </script>
