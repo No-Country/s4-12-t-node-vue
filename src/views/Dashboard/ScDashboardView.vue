@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full min-h-screen font-sans bg-gray-100">
+  <div class="flex w-full min-h-screen font-mono">
     <SideBar />
     <main class="flex flex-col flex-1 gap-3 p-4">
       <router-view></router-view>

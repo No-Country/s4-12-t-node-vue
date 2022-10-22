@@ -15,6 +15,6 @@ defineEmits(["update:modelValue"]);
     :type="type"
     :value="modelValue"
     @input="$emit('update:modelValue', $event.target.value)"
-    class="border p-1 w-full rounded-md"
+    class="border focus:border-sac p-1 w-full rounded-md"
   />
 </template>

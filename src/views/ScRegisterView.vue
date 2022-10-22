@@ -4,7 +4,7 @@ import ScText from "../components/Text/ScText.vue";
 import ScLabel from "../components/Label/ScLabel.vue";
 import ScButton from "../components/Button/ScButton.vue";
 // import { swal } from "sweetalert2/dist/sweetalert2";
-// import { useRouter } from "vue-router";
+import { useRouter } from "vue-router";
 import AuthService from "../services/auth.service";
 import { ref } from "vue";
 
@@ -14,26 +14,29 @@ const email = ref("");
 const password = ref("");
 const confirmPassword = ref("");
 // const route = useRoute();
-// const router = useRouter();
+const router = useRouter();
 
 const handleSubmit = (e) => {
   // this.$swal('Hello vue world');
   // console.log(swal);
   console.log(name.value);
   // console.log(e.target);
-  AuthService.signup(
+  const resp = AuthService.signup(
     name.value,
     lastname.value,
     email.value,
     password.value,
     confirmPassword.value
   );
-  // router.push({ path: "login" });
+
+  if (resp) {
+    router.push({ path: "login" });
+  }
 };
 </script>
 <template>
   <form
-    class="border border-gray-700 w-11/12 sm:w-2/4 px-4 py-5 rounded-md m-auto my-32"
+    class="font-mono border border-sac-300 w-11/12 sm:w-2/4 px-4 py-5 rounded-md m-auto my-2 sm:my-24 md:my-24 lg:my-24 xl:my-32"
     @submit.prevent="handleSubmit"
   >
     <ScText tag="h1" class="text-center mb-5 text-2xl font-bold"

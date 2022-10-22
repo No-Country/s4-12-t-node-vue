@@ -2,7 +2,7 @@ import Cookies from "js-cookie";
 import { ApiRequest } from "@/services/index";
 
 const login = (user, pass) => {
-  return ApiRequest.post("/login", {
+  return ApiRequest.post("/api/login", {
     email: user,
     password: pass,
   });
@@ -14,13 +14,17 @@ const get = () => {
 
 const signup = (name, lastname, email, password, confirmPassword) => {
   console.log(name, lastname, email, password, confirmPassword);
-  return ApiRequest.post("/signup", {
+  return ApiRequest.post("/api/signup", {
     nombre: name,
     apellidos: lastname,
     email,
     password,
     confirmarPassword: confirmPassword,
   });
+};
+
+const logout = () => {
+  return ApiRequest.get("/logout");
 };
 
 const inFifteenMinutes = new Date(new Date().getTime() + 15 * 60 * 1000);
@@ -41,6 +45,7 @@ const deleteAccessToken = () => {
 export default {
   login,
   signup,
+  logout,
   get,
   setAccessToken,
   getAccessToken,

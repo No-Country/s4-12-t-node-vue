@@ -30,12 +30,12 @@ const router = createRouter({
         {
           path: "",
           name: "index",
-          component: CondominiumDashboard,
+          component: HomeDashboard,
         },
         {
-          path: "/dashboard/home",
-          name: "HomeDashboard",
-          component: HomeDashboard,
+          path: "/dashboard/condominium",
+          name: "CondominiumDashboard",
+          component: CondominiumDashboard,
         },
         {
           path: "/dashboard/tower",

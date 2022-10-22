@@ -1,9 +1,9 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-teal p-6">
+  <nav class="font-mono flex items-center justify-between flex-wrap bg-teal p-2 mx-auto">
     <div class="flex items-center flex-no-shrinkmr-6">
       <router-link to="/">
         <img
-          class="fill-current h-24 w-24 mr-2"
+          class="fill-current h-24 w-24 mx-2"
           src="../../assets/logo.png"
           alt="logo icon svg"
         />
@@ -28,11 +28,15 @@
       :class="open ? 'block' : 'hidden'"
       class="w-full flex-grow sm:flex sm:items-center sm:w-auto"
     >
-      <ul class="nav text-sm sm:flex-grow sm: text-right">
-        <li><router-link to="#about-us">Nosotros</router-link></li>
-        <li><router-link to="/login">Inicio de Sesión</router-link></li>
-        <li><router-link to="/register">Registrar</router-link></li>
-        <li><router-link to="#contact">Contacto</router-link></li>
+      <ul class="nav hidden md:block sm:block lg:block xl:block text-sm sm:flex-grow sm: text-right">
+        <li class="text-sac hover:text-sac-300"><router-link to="#somos">Nosotros</router-link></li>
+        <li class="hover:text-sac"><router-link to="/login">Iniciar Sesión</router-link></li>
+        <li class="border border-sac hover:border-transparent hover:bg-sac-300 hover:text-white p-3 rounded-full"><router-link to="/register">Registrar</router-link></li>
+      </ul>
+      <ul class="nav block md:hidden sm:hidden lg:hidden xl:hidden text-sm sm:flex-grow sm: text-right">
+        <li class="text-sac hover:text-sac-300"><router-link to="#somos">Nosotros</router-link></li>
+        <li class="text-sac hover:text-sac-300"><router-link to="/login">Iniciar Sesión</router-link></li>
+        <li class="text-sac hover:text-sac-300"><router-link to="/register">Registrar</router-link></li>
       </ul>
     </div>
   </nav>
@@ -55,11 +59,6 @@ export default {
 </script>
 
 <style scoped>
-.nav {
-  text-transform: uppercase;
-  font-weight: 600;
-  padding-top: 10px;
-}
 
 .nav * {
   box-sizing: border-box;
@@ -69,16 +68,12 @@ export default {
 .nav li {
   display: inline-block;
   list-style: outside none none;
-  margin: 0.5em 1em;
-  padding: 0;
 }
 
 .nav a {
   padding: 0.5em 0.8em;
-  color: #393e46;
   position: relative;
   text-decoration: none;
-  font-size: 20px;
 }
 
 .nav a::before,
@@ -95,8 +90,7 @@ export default {
   content: "";
   right: 0;
   top: 0;
-  border-top: 3px solid #393e46;
-  border-right: 3px solid #393e46;
+  color: #393e46;
   transform: translate(-100%, 50%);
 }
 
@@ -104,8 +98,7 @@ export default {
   content: "";
   left: 0;
   bottom: 0;
-  border-bottom: 3px solid #393e46;
-  border-left: 3px solid #393e46;
+  color: #393e46;
   transform: translate(100%, -50%);
 }
 
@@ -113,9 +106,5 @@ export default {
 .nav a:hover:after {
   transform: translate(0, 0);
   opacity: 1;
-}
-
-.nav a:hover {
-  color: #393e46;
 }
 </style>

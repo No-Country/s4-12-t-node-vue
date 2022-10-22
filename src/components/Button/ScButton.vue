@@ -1,7 +1,7 @@
 <template>
   <button
-    :class="[$attrs.class ? $attrs.class : 'bg-slate-800']"
-    class="text-white p-2 rounded-sm w-full font-bold"
+    :class="[$attrs.class ? $attrs.class : 'bg-sac-300']"
+    class="text-white p-2 rounded w-full font-bold"
   >
     <slot></slot>
   </button>

@@ -28,6 +28,11 @@ const mutations = {
   setToken(state, token) {
     state.token = token;
   },
+
+  logout(state, user) {
+    state.user = {};
+    state.token = null;
+  },
 };
 
 export default {

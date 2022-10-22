@@ -3,6 +3,7 @@
 import Tower from "../icons/tower.svg";
 import Owner from "../icons/owner.svg";
 import TeamFront from "../components/Other/ScTeamFront.vue";
+import TeamBack from "../components/Other/ScTeamBack.vue";
 
 export default {
   components: {
@@ -10,13 +11,18 @@ export default {
     Tower,
     Owner,
     TeamFront,
+    TeamBack,
   },
   data() {
     return {
       team: true,
+      activeMenu : true,
     }
   },
 };
+//import { ref } from "vue";
+//const activeMenu = ref(this.team);
+
 </script>
 
 <template>
@@ -177,7 +183,7 @@ export default {
     </div>
   </div>
   <!--Team-->
-  <div id="somos" class="container px-5 py-16 mx-auto">
+  <div id="somos" class="container px-5 pt-16 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
       <h1 class="font-nunito font-black title-font sm:text-4xl text-3xl">
         Nuestro Equipo
@@ -188,11 +194,33 @@ export default {
     </div>
     <div class="flex items-center justify-center">
       <div class="flex items-center p-1 border border-sac-300 rounded-xl">
-        <button class="px-4 py-2 text-sm font-medium text-sac-400 capitalize bg-sac-300 md:py-3 rounded-xl md:px-12" @click="team = !team">Front-End</button>
-        <button class="px-4 py-2 text-sm font-medium text-sac-300 capitalize transition-colors duration-300 md:py-3 focus:outline-none hover:bg-sac hover:text-sac-400 rounded-xl md:px-12" @click="team = team">Backend</button>
+        <button 
+          class="px-4 py-2 text-sm font-medium capitalize md:py-3 rounded-xl md:px-12"
+          :class="
+            activeMenu === team
+              ? 'text-sac-400  bg-sac-300 '
+              : 'text-sac-300 transition-colors duration-300 focus:outline-none hover:bg-sac hover:text-sac-400'
+          "
+          @click="team = true"
+        >
+          Front-End
+        </button>
+        <button 
+          class="px-4 py-2 text-sm font-medium capitalize md:py-3 rounded-xl md:px-12"
+          :class="
+            activeMenu === team
+              ? 'text-sac-300 transition-colors duration-300 focus:outline-none hover:bg-sac hover:text-sac-400'
+              : 'text-sac-400  bg-sac-300 '
+          "
+          @click="team = false"
+        >
+          Back-End
+        </button>
       </div>
     </div>
+
     <TeamFront v-if="team"/>
+    <TeamBack v-if="!team"/>
   </div>
 </div>
 </template>
