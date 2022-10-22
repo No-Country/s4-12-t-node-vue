@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-y-4 items-center py-8 w-24 bg-sac-300">
+  <div class="flex flex-col gap-y-4 items-center py-8 w-24 bg-sac-300 fixed">
     <router-link
       to="/"
     >
@@ -35,7 +35,7 @@
           :class="
             activeMenu === menu.name
               ? 'shadow-error bg-sac-300'
-              : ''
+              : 'text-sac'
           "
         >
           <Component :is="menu.icon" class="w-6 h-6 invert" />
@@ -62,9 +62,9 @@ const menus = [
   { name: "Dashboard", icon: Home, path: "/dashboard/" },
   { name: "Condominium", icon: CondominiumIcon, path: "/dashboard/condominium" },
   { name: "Owners", icon: Owners, path: "/dashboard/tower" },
-  { name: "Payment", icon: NotificationIcon, path: "/dashboard/payment" },
-  { name: "Pay", icon: GraphIcon, path: "/dashboard/pay" },
-  { name: "Settings", icon: SettingsIcon, path: "/dashboard/profile" },
+  { name: "Payment", icon: NotificationIcon, path: "#" },
+  { name: "Pay", icon: GraphIcon, path: "#" },
+  { name: "Settings", icon: SettingsIcon, path: "#" },
   { name: "Logout", icon: LogoutIcon, path: "/" },
 ];
 

@@ -3,12 +3,12 @@
     <div class="container px-5 py-5 mx-auto">
       <div class="flex w-full mb-20 flex-wrap">
         <h1
-          class="sm:text-3xl text-2xl font-medium title-font text-paleta-sac-300 lg:w-1/3 lg:mb-0 mb-4"
+          class="sm:text-3xl text-2xl font-medium title-font text-sac-300 lg:w-1/3 lg:mb-0 mb-4"
         >
           Gestión de Torres
         </h1>
       </div>
-      <section class="rounded shadow-2xl text-gray-600 body-font p-4">
+      <section class="rounded border border-sac-300 font-mono body-font p-4">
         <modal-torre />
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">

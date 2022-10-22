@@ -53,7 +53,7 @@ const handleRedirect = () => {
               class="pl-8"
               type="email"
               v-model="email"
-              placeholder="dyangeltk17@gmail.com"
+              placeholder="ejemplo@email.com"
               required
             />
           </template>
