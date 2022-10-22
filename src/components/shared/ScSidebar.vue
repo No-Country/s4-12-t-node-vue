@@ -64,5 +64,5 @@ const menus = [
   { name: "Logout", icon: NotificationIcon, path: "/" },
 ];
 
-const handleLogout = () => {};
+// const handleLogout = () => {};
 </script>
