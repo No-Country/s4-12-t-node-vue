@@ -7,6 +7,9 @@ export default createStore({
   modules: {
     auth,
   },
+  state: {
+    products: [],
+  },
   strict: debug,
   plugins: debug ? [createLogger()] : [],
 });
