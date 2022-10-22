@@ -15,8 +15,8 @@ import { useStore } from "vuex";
 const router = useRouter();
 const emailValidationAlertMessage = ref("");
 const passwordValidationAlertMessage = ref("");
-const email = ref("dyangeltk17@gmail.com");
-const password = ref("123456789");
+const email = ref("");
+const password = ref("");
 // const emailValidationHandler = (e) => {
 //   emailValidationAlertMessage.value = e.target.value;
 // };
@@ -24,15 +24,12 @@ const password = ref("123456789");
 const store = useStore();
 
 const submitHandler = async () => {
-  // console.log(AuthService.login())
-  console.log(await AuthService.login(email.value, password.value));
-
-  // store.commit("auth/updateUser", {
-  //   name: "walter",
-  //   email: "dyangelttk@gmail.com",
-  // });
-  console.log(store.state.auth.user);
-  // router.push({ path: "dashboard" });
+  const resp = await AuthService.login(email.value, password.value);
+  if (resp) {
+    store.commit("auth/updateUser", resp.data.admin);
+    AuthService.setAccessToken(resp.token);
+    router.push({ path: "dashboard" });
+  }
 };
 
 const handleRedirect = () => {

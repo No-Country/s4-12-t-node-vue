@@ -23,6 +23,10 @@ const signup = (name, lastname, email, password, confirmPassword) => {
   });
 };
 
+const logout = () => {
+  return ApiRequest.get("/logout");
+};
+
 const inFifteenMinutes = new Date(new Date().getTime() + 15 * 60 * 1000);
 const setAccessToken = (userLogged) => {
   Cookies.set("userLogged", userLogged, {
@@ -41,6 +45,7 @@ const deleteAccessToken = () => {
 export default {
   login,
   signup,
+  logout,
   get,
   setAccessToken,
   getAccessToken,

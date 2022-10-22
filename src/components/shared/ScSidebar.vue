@@ -14,6 +14,19 @@
         "
       >
         <router-link
+          v-if="menu.name.includes('Logout')"
+          class="p-4 my-2 mr-4 ml-3 rounded-xl block"
+          @click="handleLogout"
+          :class="
+            activeMenu === menu.name
+              ? 'text-white shadow-error bg-paleta-sac-300'
+              : 'text-paleta-sac-400'
+          "
+        >
+          <Component :is="menu.icon" class="w-6 h-6" />
+        </router-link>
+        <router-link
+          v-else
           :to="menu.path"
           class="p-4 my-2 mr-4 ml-3 rounded-xl block"
           @click="activeMenu = menu.name"
@@ -40,6 +53,7 @@ import MessageIcon from "../../icons/message.svg";
 import NotificationIcon from "../../icons/notification.svg";
 import SettingsIcon from "../../icons/settings.svg";
 // import LogoutIcon from "../../icons/logout.svg";
+import {} from "../../store/"
 
 const activeMenu = ref("Graph");
 
@@ -52,4 +66,8 @@ const menus = [
   { name: "Settings", icon: SettingsIcon, path: "/dashboard/profile" },
   { name: "Logout", icon: NotificationIcon, path: "/" },
 ];
+
+const handleLogout = () => {
+  
+}
 </script>
