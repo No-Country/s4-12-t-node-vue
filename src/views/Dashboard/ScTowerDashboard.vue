@@ -17,7 +17,7 @@
                 class="shadow-md h-full rounded-xl shadow-cla-blue bg-gradient-to-r from-indigo-50 to-blue-50 overflow-hidden"
               >
                 <img
-                  class=" z-0 lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
+                  class="z-0 lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                   src="https://res.cloudinary.com/dytpump6i/image/upload/v1666030345/pexels-ikram-shaari-250659_qnhw0w.jpg"
                   alt="blog"
                 />
@@ -48,7 +48,7 @@
                 class="shadow-md h-full rounded-xl shadow-cla-blue bg-gradient-to-r from-indigo-50 to-blue-50 overflow-hidden"
               >
                 <img
-                  class=" z-0 lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
+                  class="z-0 lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                   src="https://res.cloudinary.com/dytpump6i/image/upload/v1666030345/pexels-ikram-shaari-250659_qnhw0w.jpg"
                   alt="blog"
                 />
@@ -79,7 +79,7 @@
                 class="shadow-md h-full rounded-xl shadow-cla-blue bg-gradient-to-r from-indigo-50 to-blue-50 overflow-hidden"
               >
                 <img
-                  class=" z-0 lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
+                  class="z-0 lg:h-48 md:h-36 w-full object-cover object-center scale-110 transition-all duration-400 hover:scale-100"
                   src="https://res.cloudinary.com/dytpump6i/image/upload/v1666030345/pexels-ikram-shaari-250659_qnhw0w.jpg"
                   alt="blog"
                 />
